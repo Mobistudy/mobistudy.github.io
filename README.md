@@ -1,2 +1,3 @@
 # mobistudy.github.io
-landing page for mobistudy
+
+Just a landing page for Mobistudy
