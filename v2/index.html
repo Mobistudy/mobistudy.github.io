@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+
+  <section>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item has-text-black has-text-weight-bold is-size-4">
+            <img src="img/mobistudy_logo.svg" alt="Logo">
+            Mobistudy
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroB" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroB" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active">
+              About
+            </a>
+            <a class="navbar-item">
+              Team
+            </a>
+            <a class="navbar-item">
+              Publications
+            </a>
+            <span class="navbar-item">
+              <a class="button is-info is-inverted">
+                <span>Login</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section class="hero is-large has-carousel">
+    <div class="hero-carousel" id="carousel">
+      <div class='has-background'>
+        <img class="is-background" src="img/laptop_stetoscope.jpg" alt="" />
+      </div>
+      <div class='has-background is-active'>
+        <img class="is-background" src="img/doctor_phone.jpg" alt="" />
+      </div>
+      <div class='has-background'>
+        <img class="is-background" src="img/wearable.jpg" alt="" />
+      </div>
+    </div>
+    <div class="hero-body">
+      <!-- Empty body -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Mobistudy
+      </h1>
+      <p class="subtitle">
+        An open platform for mobile health research.
+      </p>
+      <p>
+        Mobistudy is an open mobile-health platform for clinical research.
+        The purpose of the platform is to create a way for researchers to conduct
+        health research without the the need for developing new apps.
+        The platform has an emphasis on regulatory compliance, patient consent and transparency.
+      </p>
+    </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-two-fifths has-background">
+          <img class="is-background" src="img/laptop_stetoscope.jpg" alt="" />
+        </div>
+        <div class="column">
+          <h1 class="title">
+            For clinical researchers:
+          </h1>
+          <div class="content">
+            <ul>
+              <li>Define your study with an online form</li>
+              <li>Recruit patients online</li>
+              <li>Monitor status and progession</li>
+              <li>Download study data for analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h1 class="title">
+            For citizens:
+          </h1>
+          <div class="content">
+            <ul>
+              <li>Be involved in interesting research</li>
+              <li>Easy to understand and revokable consent</li>
+              <li>Donate your data for research</li>
+              <li>Perform measurement tasks, be informed abuot your health</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column is-two-fifths has-background">
+          <img class="is-background" src="img/laptop_stetoscope.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Features
+      </h1>
+      <div class="content">
+        <ul>
+          <li>Researchers can setup new studies without the need of a developer</li>
+          <li>Several data collection tasks:</li>
+          <ul>
+            <li>Forms and questionnaires</li>
+            <li>Data collection from common apps and wearables through HealthKit and Google Fit</li>
+            <li>Six-minute walk tetst</li>
+            <li>Queen's College Step Test</li>
+          </ul>
+          <li>Works on iPhones and Android phones</li>
+          <li>User friendly</li>
+          <li>Transparent and trustful</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer has-background-dark has-text-light">
+    <div class="has-text-centered">
+      <p>
+        <strong class="has-text-light">Mobistudy</strong> is managed by the University of Malmö.
+      </p>
+    </div>
+    <div class="level">
+      <div class="level-left">
+        <div class="level-item">
+          <p>
+            <a class="">Contact</a>
+          </p>
+        </div>
+        <div class="level-item">
+          <p>
+            <a>Privacy policy</a>
+          </p>
+        </div>
+        <div class="level-item">
+          <p>
+            <a>Acknowledgments</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="level-right">
+        <div class="level-item">
+          <span class="icon is-large">
+            <i class="fab fa-github fa-3x"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+  <script>
+  bulmaCarousel.attach('#carousel');
+  </script>
+</body>
+</html>
