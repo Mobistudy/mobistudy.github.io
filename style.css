@@ -1,0 +1,25 @@
+section {
+    margin-top: 80px; 
+    max-width: 65ch;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    padding: 10px;
+    font-size: smaller;
+    font-weight: lighter;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: darkgrey;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100ch;
+}
+
+/* overwrites picnic color */
+a {
+    color: #86CCD7
+}

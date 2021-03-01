@@ -1,255 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
   <title>Mobistudy</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-    type="text/css">
-
-  <!-- Custom styles for this template -->
-  <link href="css/landing-page.min.css" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c94169d05b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <nav>
+    <a href="index.html" class="brand">
+      <img class="logo" src="img/logo_full.png" />
+    </a>
 
-  <!-- Masthead -->
-  <header class="masthead text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <img class="img-fluid" src="img/mobistudy_logo.svg" alt="University of Oxford" style="max-height: 200px;">
+    <input id="bmenub" type="checkbox" class="show">
+    <label for="bmenub" class="burger pseudo button">menu</label>
 
-          <h1 class="mb-5">Mobistudy</h1>
-          <h2>an opensource platform for mobile-phone based health research</h2>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form name="submit-to-google-sheet">
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input name="email" type="email" class="form-control form-control-lg" placeholder="Enter your email..."
-                  required>
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+    <div class="menu">
+      <a href="news.html" class="pseudo button">News</a>
+      <a href="publications.html" class="pseudo button">Publications</a>
+      <a href="https://app.mobistudy.org" class="pseudo button">Researchers login</a>
     </div>
-  </header>
+  </nav>
 
-  <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-doc m-auto text-primary"></i>
-            </div>
-            <h3>Define your study</h3>
-            <p class="lead mb-0">Define your study protocol: inclusion criteria, informed consent, questionnaires and
-              custom forms, vital signs.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-user-following m-auto text-primary"></i>
-            </div>
-            <h3>Recruit online</h3>
-            <p class="lead mb-0">Access patients on their phone, through an app, let the platform do the recruitment and
-              the data collection.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-speedometer m-auto text-primary"></i>
-            </div>
-            <h3>Analyse your data</h3>
-            <p class="lead mb-0">Retrieve patients' data, visualise progression and download it for further analysis.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <main>
+    <section>
 
-  <!-- Image Showcases -->
-  <section class="showcase">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-
-        <div class="col-lg-6 order-lg-2 text-white showcase-img"
-          style="background-image: url('img/bg-showcase-1.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Easy to use</h2>
-          <p class="lead mb-0">The Mobistudy app is meant to be used by everybody.
-            Informed consent is explained in lay terms.
-            Users can always have a second thought and opt-out from some of the consented items.
-            Forms and questionnaires are beautifully designed and easy to fill-in.</p>
-        </div>
+      <div style="text-align: center;">
+        <img src="img/icon.svg" style="max-width: 20vw;">
       </div>
 
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h2>Connect to the rich health apps ecosystem</h2>
-          <p class="lead mb-0">Mobistudy works on Android and iPhones.
-            Thanks to Healthkit and Google Fit, Mobistudy allows to extract data from other health apps.
-            For example, you can choose your best app for weight management, or let the participant decide.
+      <h2>
+        Mobistudy is an open platform for mobile-based clinical research.
+      </h2>
+
+      <div class="flex one two-600">
+        <div>
+          <img src="img/doctor_phone.jpg" style="max-width:100%;" />
+        </div>
+        <div>
+          <p>
+            As researcher, you can setup a clinical study online, define the inclusion criteria, the data that you want
+            to retrieve and recruit participants online.
+          </p>
+        </div>
+        <div>
+          <p>
+            As a participant, you get invited to new exciting studies through the app, consent your participation and
+            your treatment of data and and contribute to the research by donating your data.
+          </p>
+        </div>
+        <div><img src="img/patient_phone.jpg" style="max-width:100%;"></div>
+        <div>
+          <img src="img/wearable.jpg" style="max-width:100%;" />
+        </div>
+        <div>
+          <p>
+            Mobistudy can collect data from the fitness trackers and wearable devices and from the rich ecosystem of
+            apps connected to Google Fit or HealthKit.
           </p>
         </div>
       </div>
 
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img"
-          style="background-image: url('img/bg-showcase-3.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>No need to hire an engineer!</h2>
-          <p class="lead mb-0">
-            You don't need to develop a new app for your study, you can use Mobistudy straight away.
-            If you have special requirements, you can still develop on top Mobistudy easily, it is built on widely known
-            Web technologies.
+    </section>
+
+    <section>
+      <p>Mobistudy supports a rich set of data collection tasks.</p>
+      <div class="flex three">
+        <div>
+          IMG
+        </div>
+        <div class="two-third">
+          <h4>Forms and questionnaires.</h4>
+          <p>
+            Researchers can define their own questionnaires. Branching and answer-based logic are also supported.
+          </p>
+        </div>
+        <div>
+          IMG
+        </div>
+        <div class="two-third">
+          <h4>Data extraction from Google Fit and Apple HealthKit.</h4>
+          <p>
+            Through transparent and explicit consent, participants can share data collected by the phone such as: steps
+            count, weight, height, physical activity, distance, calories and heart rate.
+            These data can be produced by the phone itself or by any connected app or wearable device that is compatible
+            with Google Fit or Apple HealthKit.
+          </p>
+        </div>
+        <div>
+          IMG
+        </div>
+        <div class="two-third">
+          <h4>Data collection from wearable devices.</h4>
+          <p>
+            If you don't want to use third-party apps, we also support direct data extraction from the Xiaomi Miband3
+            fitness tracker. The device can provide minute-by-minute steps count, activity level, activity type and
+            heart rate.
+          </p>
+        </div>
+        <div>
+          IMG
+        </div>
+        <div class="two-third">
+          <h4>6-minute walk test.</h4>
+          <p>
+            Mobile-based 6MWT, uses <a href="https://mhealth.jmir.org/2020/1/e13756/">a validated method</a> to compute
+            the walked distance using the positioning system.
+          </p>
+        </div>
+        <div>
+          IMG
+        </div>
+        <div class="two-third">
+          <h4>Queens' College Step Test.</h4>
+          <p>
+            This mobile-based step test guides the participant with sound and visual cues.
+          </p>
+        </div>
+        <div>
+          IMG
+        </div>
+        <div class="two-third">
+          <h4>Pulseoximetry</h4>
+          <p>
+            Gets blood oxygen saturation and heart rate from the wireless Beuer PO60 pulseoximeter.
           </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials text-center bg-light">
-    <!-- <div class="container">
-      <h2 class="mb-5">Made by</h2>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/arvingo.jpg" alt="Arvin Goburdhun">
-            <h5>Arvin Goburdhun</h5>
-            <p class="font-weight-light mb-0">Software developer at the Institute of Biomedical Engineering, University
-              of Oxford.</p>
+    <section>
+      <div style="text-align: center;">
+        <h3>
+          Join Mobistudy, download the participants' app now!
+        </h3>
+        <div class="flex two">
+          <div>
+            <a href="https://play.google.com/store/apps/details?id=org.mobistudy.app">
+              <img src="img/android_download.png" style="max-width: 200px;">
+            </a>
+          </div>
+          <div>
+            <a href="https://apps.apple.com/us/app/mobistudy">
+              <img src="img/ios_download.png" style="max-width: 190px; padding-left: 4px;">
+            </a>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/dariosalvi.jpg" alt="Dario Salvi">
-            <h5>Dario Salvi</h5>
-            <p class="font-weight-light mb-0">Associate senior lecturer, School of Arts and Communication (K3), Malmö
-              Universitet.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/carmelovelardo.png" alt="Carmelo Velardo">
-            <h5>Carmelo Velardo</h5>
-            <p class="font-weight-light mb-0">Departmental Lecturer at the Institute of Biomedical Engineering,
-              University of Oxford.</p>
-          </div>
-        </div>
-      </div> -->
-    <div class="row mt-4">
-      <div class="col-lg-6">
-        <img class="img-fluid" src="img/logo-oxweb.png" alt="University of Oxford" style="max-height: 150px;">
       </div>
-      <div class="col-lg-6">
-        <img class="img-fluid" src="img/malmo_logo.png" alt="Malmö University" style="max-height: 150px;">
-      </div>
-    </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Call to Action -->
-  <section class="call-to-action text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4">Want to know more? Leave us your email address.</h2>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form name="submit-to-google-sheet">
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input name="email" type="email" class="form-control form-control-lg" placeholder="Enter your email..."
-                  required>
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Stay in touch</button>
-              </div>
-            </div>
-          </form>
-        </div>
+    <section>
+      <div style="text-align: center;">
+        <a href="https://mau.se"><img src="img/malmo_logo.png" style="max-width: 60px;"></a>
       </div>
-    </div>
-  </section>
+      <p style="text-align: center;">Mobistudy is developed with ❤️ by Malmö University, Sweden.</p>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-          <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="appPrivacyPolicy.html">Participants' app Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="researchersPrivacyPolicy.html">Researchers' Privacy Policy</a>
-            </li>
-          </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Malmö University.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="flex two three-600">
+      <div>
+        <!-- <div>
+          ©️ Malmö University <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>.
+        </div> -->
+        <div>
+          <a href="contact.html">Contact us</a>.
         </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="https://github.com/Mobistudy/">
-                <i class="fa fa-github fa-2x fa-fw"></i>
-              </a>
-            </li>
-          </ul>
+
+        <div>
+          <a href="acks.html">Acknowledgements</a>.
         </div>
       </div>
+      <div>
+        <div>
+          <a href="appPrivacyPolicy.html">Participants' app privacy policy.</a>
+        </div>
+        <div>
+          <a href="researchersPrivacyPolicy.html">Researchers website privacy policy.</a>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <a href="https://github.com/Mobistudy"><i class="fab fa-github fa-lg fa-3x"></i></a>
+      </div>
     </div>
+
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> -->
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzopH4i5Dqx3WcGlwmdNiNIB-u6rgIqksFJNgjwxwnEXOXC1eE/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 
 </body>
 
