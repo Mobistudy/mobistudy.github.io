@@ -267,4 +267,5 @@ body {
 
 #banner5grid>div>p {
     font-size: 0.8em;
+    text-justify: inter-word;
 }
