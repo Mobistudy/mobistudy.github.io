@@ -7,9 +7,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    /* max-width: 1600px; */
-    /* on desktops, overridden on phones */
+    max-width: 1600px;
     font-size: 1.4em;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1em;
+    }
 }
 
 #logosubscript {
@@ -21,14 +24,31 @@ body {
     text-transform: uppercase;
 }
 
-.boldentext {
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-}
-
 .fullwidth {
     width: 100%;
+}
+
+.dashes {
+    width: 100%;
+    z-index: 3;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.bannerimg {
+    position: relative;
+    z-index: 2;
+}
+
+.bannerbackground {
+    width: 100%;
+}
+
+.bannertext {
+    position: absolute;
+    z-index: 4;
 }
 
 #banner1 {
@@ -40,10 +60,71 @@ body {
     align-items: center;
 }
 
+#banner1logocontainer {
+    width: 50%;
+    color: var(--mobistudy-bg-color);
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
+#banner1users {
+    width: 50%;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
 
 #banner2 {
     width: 100%;
     position: relative;
+}
+
+#banner2>.dashes {
+    position: absolute;
+    top: 0px;
+}
+
+#banner2>.bannerimg {
+    width: 63%;
+    position: relative;
+    left: -3.5%;
+    z-index: 2;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        left: -5%;
+    }
+}
+
+#banner2>.bannerbackground {
+    position: absolute;
+    top: 0px;
+    background-color: var(--mobistudy-bg-color);
+    width: 100%;
+    height: 73%;
+    z-index: 1;
+
+    @media only screen and (max-width: 768px) {
+        height: 125%;
+    }
+}
+
+#banner2>.bannertext {
+    top: 35%;
+    left: 55%;
+    width: 35%;
+    color: white;
+
+    @media only screen and (max-width: 768px) {
+        top: 100%;
+        left: 10%;
+        width: 80%;
+    }
 }
 
 #banner3 {
@@ -51,72 +132,67 @@ body {
     position: relative;
 }
 
-#banner4 {
-    width: 100%;
-    position: relative;
-}
-
-#banner1logocontainer {
-    width: 50%;
-    color: var(--mobistudy-bg-color);
-}
-
-#banner1users {
-    width: 50%;
-}
-
-#banner2dashes {
+#banner3>.dashes {
     position: absolute;
     top: 0px;
-    z-index: 3;
 }
 
-#banner3dashes {
-    position: absolute;
-    top: 0px;
-    z-index: 3;
-}
-
-#banner4dashes {
-    position: absolute;
-    top: 49%;
-    z-index: 3;
-}
-
-
-#banner2clinicians {
-    width: 63%;
-    position: relative;
-    left: -3.5%;
-    z-index: 2;
-}
-
-#banner3participants {
+#banner3>.bannerimg {
     width: 40%;
     position: relative;
     left: 58%;
     margin-top: -20%;
     z-index: 2;
+
+    @media only screen and (max-width: 768px) {
+        width: 70%;
+        left: 15%;
+        margin-top: 15%;
+    }
 }
 
-#banner4devices {
-    width: 57%;
+#banner3>.bannertext {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 35%;
+    z-index: 4;
+    color: black;
+
+    @media only screen and (max-width: 768px) {
+        top: 100%;
+        left: 10%;
+        width: 80%;
+    }
+}
+
+#banner4 {
+    width: 100%;
     position: relative;
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 10%;
+    }
+}
+
+#banner4>.dashes {
+    position: absolute;
+    top: 49%;
+}
+
+#banner4>.bannerimg {
+    width: 57%;
     left: 2%;
     margin-top: 11%;
-    z-index: 2;
+
+    @media only screen and (max-width: 768px) {
+        width: 80%;
+        left: 8%;
+        margin-top: 20%;
+    }
 }
 
-#banner2background {
-    position: absolute;
-    top: 0px;
-    background-color: var(--mobistudy-bg-color);
-    width: 100%;
-    height: 73%;
-    z-index: 1;
-}
-
-#banner4background {
+#banner4>.bannerbackground {
     position: absolute;
     top: 20%;
     left: 10.5%;
@@ -125,92 +201,70 @@ body {
     z-index: 1;
     background-color: var(--mobistudy-light-color);
     border-radius: 25px 0px 0px 25px;
+
+    @media only screen and (max-width: 768px) {
+        width: 79%;
+        border-radius: 25px;
+    }
 }
 
-#banner2text {
-    position: absolute;
-    top: 35%;
-    left: 55%;
-    width: 35%;
-    z-index: 4;
-    color: white;
-}
-
-#banner3text {
-    position: absolute;
-    top: 35%;
-    left: 15%;
-    width: 35%;
-    z-index: 4;
-    color: black;
-}
-
-#banner4text {
+#banner4>.bannertext {
     position: absolute;
     top: 65%;
     left: 60%;
     width: 35%;
     z-index: 4;
     color: black;
+
+    @media only screen and (max-width: 768px) {
+        top: 100%;
+        left: 10%;
+        width: 80%;
+    }
 }
 
-/* only applies to mobile phones */
-@media only screen and (max-width: 768px) {
 
-    body {
-        font-size: 1em;
-    }
+#banner5 {
+    width: 100%;
+    margin-top: 20px;
 
-    #banner1logocontainer {
-        width: 100%;
-        margin-bottom: 1em;
+    @media only screen and (max-width: 768px) {
+        margin-top: 150px;
     }
+}
 
-    #banner2clinicians {
-        width: 100%;
-        left: -5%;
-    }
+#banner5>p {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4em;
 
-    #banner3participants {
-        width: 80%;
-        left: 20%;
-        margin-top: 20%;
+    @media only screen and (max-width: 768px) {
+        font-size: 1.3em;
     }
+}
 
-    #banner4devices {
-        width: 80%;
-        left: 8%;
-        margin-top: 20%;
-    }
+#banner5grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    gap: 10px;
 
-    #banner2background {
-        height: 125%;
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: auto auto;
+        font-size: 1.1em;
     }
+}
 
-    #banner4background {
-        width: 79%;
-        border-radius: 25px;
-    }
+#banner5grid>div {
+    max-width: 300px;
+}
 
-    #banner2text {
-        top: 100%;
-        left: 10%;
-        width: 80%;
-    }
+#banner5grid>div>img {
+    width: 100%;
+    min-width: 50px;
+}
 
-    #banner3text {
-        top: 100%;
-        left: 10%;
-        width: 80%;
-    }
-
-    #banner4text {
-        top: 110%;
-        left: 10%;
-        width: 80%;
-    }
-
-    .nomobile {
-        display: none;
-    }
+#banner5grid>div>p {
+    font-size: 0.8em;
 }

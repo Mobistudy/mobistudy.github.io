@@ -1,0 +1,21 @@
+<svg id="Lager_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425 518">
+    <defs>
+        <style>
+            .cls-3{stroke:#191919}.cls-3,.cls-4{stroke-linecap:round;stroke-linejoin:round}.cls-3{stroke-width:4.32px;fill:none}.cls-4{fill:#75bfcb;stroke:#75bfcb;stroke-width:6.48px}</style>
+    </defs>
+    <circle cx="213.16" cy="258.82" r="172.04" style="fill:#459399;stroke-width:0" />
+    <rect x="122.58" y="85.8" width="172.34" height="344.62" rx="20.57" ry="20.57"
+        transform="rotate(-12.45 208.819 258.18)"
+        style="fill:#fff;stroke:#191919;stroke-linecap:round;stroke-linejoin:round;stroke-width:4.32px" />
+    <path transform="rotate(-12.45 173.665 94.828)"
+        style="stroke:#191919;stroke-linecap:round;stroke-linejoin:round;stroke-width:6.03px;fill:none"
+        d="M145.69 91.95h55.85v5.74h-55.85z" />
+    <path class="cls-4"
+        d="m134.422 182.877 22.957-5.068 5.069 22.957-22.958 5.069zm12.808 58.024 22.957-5.068 5.068 22.957-22.957 5.068zm12.808 58.032 22.958-5.069 5.068 22.958-22.957 5.068z" />
+    <path class="cls-3"
+        d="M134.54 194.87c3.51.54 13.81 7.58 13.81 7.58s8.65-21.52 13.5-27.67m-14.68 77.26c3.51.54 13.81 7.58 13.81 7.58s8.65-21.52 13.5-27.67m-10.41 92.19s12.11-24.5 18.36-31.29" />
+    <path class="cls-3" d="M157.61 299.31s24.5 12.11 31.29 18.36" />
+    <path class="cls-4"
+        d="m173.85 177.35 73.72-16.28m-70.63 30.27 39.28-8.68m-29.4 53.44 73.73-16.29m-70.64 30.28 39.28-8.68m-29.39 53.43 73.72-16.28m-70.63 30.27 39.28-8.67" />
+    <circle class="cls-3" cx="239.33" cy="396.56" r="13.59" />
+</svg>
