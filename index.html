@@ -5,142 +5,62 @@
   <meta charset="utf-8">
   <title>Mobistudy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/c94169d05b.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/ico" href="img/favicon.ico">
 </head>
 
 <body>
-  <nav>
-    <a href="index.html" class="brand">
-      <img class="logo" src="img/logo_full.png" />
-    </a>
-
-    <input id="bmenub" type="checkbox" class="show">
-    <label for="bmenub" class="burger pseudo button">menu</label>
-
-    <div class="menu">
-      <a href="news.html" class="pseudo button">News</a>
-      <a href="publications.html" class="pseudo button">Publications</a>
-      <a href="https://app.mobistudy.org" class="pseudo button">Researchers login</a>
-    </div>
-  </nav>
 
   <main>
     <section>
-
-      <div style="text-align: center;">
-        <img src="img/icon.svg" style="max-width: 15ch;">
-      </div>
-
-      <h2>
-        Mobistudy is an open platform for mobile-based clinical research.
-      </h2>
-
-      <div class="flex one two-600">
-        <div>
-          <img src="img/doctor_phone.jpg" style="max-width:100%;" />
+      <div id="banner1">
+        <div id="banner1logocontainer" class="uppercase">
+          <img src="img/logo_long.svg" class="fullwidth">
+          <div id="logosubscript">An open platform for mobile-based health studies</div>
         </div>
-        <div>
-          <p>
-            As researcher, you can setup a clinical study online, define the inclusion criteria, the data that you want
-            to retrieve and recruit participants online.
-          </p>
-        </div>
-        <div>
-          <p>
-            As a participant, you get invited to new exciting studies through the app, consent your participation and
-            your treatment of data and and contribute to the research by donating your data.
-          </p>
-        </div>
-        <div><img src="img/patient_phone.jpg" style="max-width:100%;"></div>
-        <div>
-          <img src="img/wearable.jpg" style="max-width:100%;" />
-        </div>
-        <div>
-          <p>
-            Mobistudy can collect data from a rich ecosystem of sensors, wearables as well as apps connected to Google
-            Fit or HealthKit.
-          </p>
-          <h3>See the supported <a href="tasks.html">data collection tasks</a></h3>
-        </div>
-      </div>
-
-    </section>
-
-    <section>
-      <p>Mobistudy supports a rich set of data collection tasks:</p>
-      <div class="flex three">
-        <div>
-          <img src="img/form.jpg" style="max-width:100%;" />
-        </div>
-        <div class="two-third">
-          <h4>Forms and questionnaires.</h4>
-          <p>
-            Researchers can define their own questionnaires. Branching and answer-based logic are also supported.
-          </p>
-        </div>
-        <div>
-          <img src="img/dataquery.jpg" style="max-width:100%;" />
-        </div>
-        <div class="two-third">
-          <h4>Data extraction from Google Fit and Apple HealthKit.</h4>
-          <p>
-            Through transparent and explicit consent, participants can share data collected by the phone such as: steps
-            count, weight, height, physical activity, distance, calories and heart rate.
-            These data can be produced by the phone itself or by any connected app or wearable device that is compatible
-            with Google Fit or Apple HealthKit.
-          </p>
-        </div>
-        <div>
-          <img src="img/miband.jpg" style="max-width:100%;" />
-        </div>
-        <div class="two-third">
-          <h4>Data collection from wearable devices.</h4>
-          <p>
-            If you don't want to use third-party apps, we also support direct data extraction from the Xiaomi Miband3
-            fitness tracker. The device can provide minute-by-minute steps count, activity level, activity type and
-            heart rate.
-          </p>
-        </div>
-        <div>
-          <img src="img/6mwt.jpg" style="max-width:100%;" />
-        </div>
-        <div class="two-third">
-          <h4>6-minute walk test.</h4>
-          <p>
-            Mobile-based 6MWT, uses <a href="https://mhealth.jmir.org/2020/1/e13756/">a validated method</a> to compute
-            the walked distance using the positioning system.
-          </p>
-        </div>
-        <div>
-          <img src="img/qcst.jpg" style="max-width:100%;" />
-        </div>
-        <div class="two-third">
-          <h4>Queens' College Step Test.</h4>
-          <p>
-            This mobile-based step test guides the participant with sound and visual cues.
-          </p>
-        </div>
-        <div>
-          <img src="img/po60.jpg" style="max-width:100%;" />
-
-        </div>
-        <div class="two-third">
-          <h4>Pulseoximetry</h4>
-          <p>
-            Gets blood oxygen saturation and heart rate from the wireless Beuer PO60 pulseoximeter.
-          </p>
-        </div>
+        <img id="banner1users" src="img/users.svg" class="nomobile">
       </div>
     </section>
 
     <section>
+      <div id="banner2">
+        <img id="banner2dashes" src="img/dashes1.svg" class="fullwidth nomobile">
+        <img id="banner2clinicians" src="img/clinicians.svg">
+        <div id="banner2background">
+        </div>
+        <div id="banner2text">As a researcher, you can setup a clinical study online, define the inclusion criteria, the
+          data that you want to retrieve, and recruit participants online.</div>
+      </div>
+    </section>
+
+    <section>
+      <div id="banner3">
+        <img id="banner3dashes" src="img/dashes2.svg" class="fullwidth nomobile">
+        <img id="banner3participants" src="img/participants.svg">
+        <div id="banner3text">As a participant, you can be invited to new exciting studies through the app, consent
+          your participation and your data treatment, and contribute to the research by donating your data.</div>
+      </div>
+    </section>
+
+    <section>
+      <div id="banner4">
+        <img id="banner4dashes" src="img/dashes3.svg" class="fullwidth nomobile">
+        <img id="banner4devices" src="img/devices.svg">
+        <div id="banner4background"></div>
+        <div id="banner4text">Mobistudy can collect data from a rich ecosystem of sensors, medical devices and
+          wearables, including all those apps connected to Apple Healthkit and Google HealthConnect.</div>
+      </div>
+    </section>
+
+    <!-- <section>
+      <p class="boldentext">Mobistudy supports a rich set of data collection tasks</p>
+    </section> -->
+
+    <!-- <section>
       <div style="text-align: center;">
-        <h3>
+        <h2>
           Join Mobistudy, download the participants' app now!
-        </h3>
+        </h2>
         <p>(App currently available in Sweden, Spain and the UK)</p>
         <div class="flex two">
           <div>
@@ -157,9 +77,6 @@
       </div>
     </section>
 
-    <section>
-
-    </section>
 
     <section>
       <div style="text-align: center;">
@@ -178,9 +95,6 @@
   <footer class="footer">
     <div class="flex two three-600">
       <div>
-        <!-- <div>
-          ©️ Malmö University <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>.
-        </div> -->
         <div>
           <a href="contact.html">Contact us</a>
         </div>
@@ -202,7 +116,7 @@
       </div>
     </div>
 
-  </footer>
+  </footer> -->
 
 </body>
 
