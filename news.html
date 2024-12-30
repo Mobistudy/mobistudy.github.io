@@ -3,36 +3,49 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Mobistudy</title>
+    <title>Mobistudy News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c94169d05b.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/ico" href="img/favicon.ico">
 
 </head>
 
 <body>
-    <nav>
-        <a href="index.html" class="brand">
-            <img class="logo" src="img/logo_full.png" />
-        </a>
-
-        <input id="bmenub" type="checkbox" class="show">
-        <label for="bmenub" class="burger pseudo button">menu</label>
-
-        <div class="menu">
-            <a href="news.html" class="pseudo button">News</a>
-            <a href="publications.html" class="pseudo button">Publications</a>
-            <a href="https://app.mobistudy.org" class="pseudo button">Researchers login</a>
+    <nav id="navigation">
+        <div>
+            <a href="/"><img src="img/icon.svg" width="100" /></a>
+        </div>
+        <div>
+            <a class="buttonlink" href="news.html">News</a>
+        </div>
+        <a class="buttonlink" href="publications.html">Publications</a>
+        <div>
+            <a class="buttonlink" href="about.html">About us</a>
         </div>
     </nav>
 
-    <main>
+    <main style="padding: 50px;">
         <section>
             <h2>News:</h2>
 
-            <article class="card">
+
+            <article>
+                <header>
+                    <h3>2023-08-17: App Release 0.3.2</h3>
+                </header>
+                <footer>
+                    <p>
+                        Included in the new version:
+                    </p>
+                    <ul>
+                        <li>Added inertial sensors data in 6MWT</li>
+                        <li>Updated dependencies</li>
+                        <li>Bug fixes</li>
+                    </ul>
+                </footer>
+            </article>
+
+            <article>
                 <header>
                     <h3>2021-07-27: Updated Privacy Policy for participants</h3>
                 </header>
@@ -44,7 +57,7 @@
                 </footer>
             </article>
 
-            <article class="card">
+            <article>
                 <header>
                     <h3>2021-06-22: New app release, version 0.2.8</h3>
                 </header>
@@ -61,7 +74,7 @@
                 </footer>
             </article>
 
-            <article class="card">
+            <article>
                 <header>
                     <h3>2021-05-01: Mobistudy is part of IVA 100 list 2021</h3>
                 </header>
@@ -76,7 +89,7 @@
                 </footer>
             </article>
 
-            <article class="card">
+            <article>
                 <header>
                     <h3>2021-05-06: Version 0.2.7 of the app released!</h3>
                 </header>
@@ -92,7 +105,7 @@
                 </footer>
             </article>
 
-            <article class="card">
+            <article>
                 <header>
                     <h3>2021-04-14: App version 0.2.5 released</h3>
                 </header>
@@ -115,7 +128,7 @@
                 </footer>
             </article>
 
-            <article class="card">
+            <article>
                 <header>
                     <h3>2021-03-31: Version 0.2.4 of the app released!</h3>
                 </header>
@@ -135,7 +148,7 @@
                 </footer>
             </article>
 
-            <article class="card">
+            <article>
                 <header>
                     <h3>2021-03-01: New Mobsitudy website published</h3>
                 </header>
@@ -150,33 +163,19 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="flex two three-600">
-            <div>
-                <!-- <div>
-          ©️ Malmö University <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>.
-        </div> -->
-                <div>
-                    <a href="contact.html">Contact us</a>
-                </div>
-
-                <div>
-                    <a href="acks.html">Acknowledgements</a>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <a href="appPrivacyPolicy.html">Participants' app privacy policy</a>
-                </div>
-                <div>
-                    <a href="researchersPrivacyPolicy.html">Researchers website privacy policy</a>
-                </div>
-            </div>
-            <div style="text-align: right;">
-                <a href="https://github.com/Mobistudy"><i class="fab fa-github fa-lg fa-3x"></i></a>
-            </div>
+    <footer id="footer">
+        <div>
+            <a href="acks.html">Acknowledgements</a>
         </div>
-
+        <div>
+            <a href="appPrivacyPolicy.html">Participants' app privacy policy</a>
+        </div>
+        <div>
+            <a href="researchersPrivacyPolicy.html">Researchers website privacy policy</a>
+        </div>
+        <div>
+            <a href="https://github.com/Mobistudy"><img src="img/githubicon.svg" width="60"></img></a>
+        </div>
     </footer>
 
 </body>
